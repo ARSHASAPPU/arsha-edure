@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+    
+        padding:20px;
+        width:97%;
+        position: sticky;
+        top:0px;
+        z-index: 1000;
+        background-color: azure;
+    }
+    .child1{
+        width:120px;
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .child2{
+        display: flex;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 280px;
+    }
+    .home{
+        color: green;
+    }
+    .grey{
+        color: grey;
+    }
+    .main{
+        width: 100%;
+        height:5570px;
+        position: relative;
+        
+        
+        
+    }
+    .first{
+        margin-left:60px;
+        
+        opacity:1;
+    }
+    .round{
+        position: absolute;
+        top:0px;
+        left:500px;
+        
+    }
+    .con{
+        position: absolute;
+        top: 300px;
+        left:450px;
+    }
+    .world{
+        
+        
+        color: azure;
+    }
+    .count{
+        color: azure;
+        text-align: center;
+    }
+    .la{
+        color:black;
+        text-align: center;
+        background-color:white;
+        padding:10px;
+        width:150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:110px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    .second{
+        background-color: bisque;
+        
+        margin-top:50px;
+        text-align: center;
+        width:800px;
+        height:150px;
+        margin-left:250px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(37, 33, 33);
+        
+    }
+    .third{
+        
+        margin-top:100px;
+        text-align: center;
+        padding:50px;
+    }
+    .where{
+        color: grey;
+    }
+    .fine{
+        font-size:50px;
+        
+    }
+    .fourth{
+        display: flex;
+        gap:30px;
+        margin-top:50px;
+        justify-content: space-around;
+        margin-right:70px;
+    }
+    .article1{
+        margin-left:70px;
+        
+    }
+    .ris{
+        font-size:40px;
+    }
+    .nico{
+        font-size:20px;
+        line-height:1.5;
+    }
+    .carta{
+        color:azure;
+        background-color: black;
+        width: fit-content;
+        padding:10px;
+    }
+    .arrow{
+        position: relative;
+    }
+    .sticky{
+        position: fixed;
+        bottom: 50px;
+        right:60px;
+        font-size:50px;
+    }
+    .fifth{
+        display: flex;
+        margin-top:90px;
+        gap:30px;
+        margin-left:100px;
+        margin-right:70px;
+    }
+    .bar{
+        font-size:40px;
+
+    }
+    .leave{
+        font-size:20px;
+        line-height:1.5;
+
+    }
+    .l{
+        color:azure;
+        background-color: black;
+        width: fit-content;
+        padding:10px;
+
+    }
+    .sixth{
+        display: flex;
+        margin-top:90px;
+        margin-left: 100px;
+        margin-right:70px;
+        gap:30px;
+    }
+    .many{
+        font-size:40px;
+
+
+    }
+    .we{
+        font-size:20px;
+        line-height:1.5;
+
+    }
+    .d{
+        display: flex;
+        gap:33px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .fo{
+        font-size:40px ;
+    }
+    .pa{
+        font-size:20px;
+        line-height:1.5;
+        font-weight: bold;
+    }
+    .magi{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .teams{
+        line-height: 1.5;
+        
+        
+    }
+    .last{
+        background-color: antiquewhite;
+        line-height:1.8;
+        text-align: center;
+        margin-top:90px;
+        padding-bottom:50px;
+        margin-left:40px;
+        margin-right:40px;
+    
+    }
+    .job{
+        font-size:40px;
+    }
+    .p{
+        font-size: 25px;
+        color: gray;
+    }
+    .t{
+        font-weight: bold;
+    }
+    .m{
+        background-color:rgb(39, 31, 31);
+        color: azure;
+        width:fit-content;
+        margin-left:600px;
+        padding:10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer{
+        background-color:rgb(14, 58, 14);
+        margin-top: 30px;
+        height: 480px;
+        padding-top: 70px;
+        position: relative;
+        
+    }
+    .foot{
+        
+        
+        
+        height: 300px;
+        margin-left:180px;
+        margin-right: 180px;
+        display: flex;
+        gap: 90px;
+        justify-content: space-evenly;
+        line-height: 1.4;
+        color: white;
+
+        }
+        .orange{
+            margin-top: 30px;
+        
+        height: 70px;
+        margin-left:180px;
+        margin-right: 180px;
+        display: flex;
+        gap: 90px;
+        justify-content: space-between;
+        align-items: center;
+        
+        color: white;
+
+
+        }
+        .line{
+            
+            margin-left: 180px;
+            margin-right: 180px;
+            margin-top: 70px;
+
+        }
+        .o3{
+            display: flex;
+            gap: 20px;
+        }
+        .logo{
+            position: absolute;
+            bottom: 230px;
+            left: 40px;
+        }
+    
+    
+    
+    </style>
+<body>
+    <div class="nav">
+        <div class="child1">
+          <img src="https://cdn.prod.website-files.com/62515e0d3cfd87ab1da93f7d/62adf5648e7ede293bef166c_breit.svg">
+        </div>
+        <div class="child2">
+            <h4 class="home">HOME</h4>
+            <h4 class="grey"> LAW CARTA</h4>
+            <h4 class="grey"> JOBS</h4>
+            <h4 class="grey">EVENTS</h4>
+            <h4 class="grey">RESERVATION</h4>
+        </div>
+    </div>
+    <div class="main">
+        <div class="first">
+        <img src="cheers.jpg" width="95%" height="500px">
+        </div>
+        <div class="round">
+            <img src="overlay.png" width="300px">
+        </div>
+        <div class="con">
+
+        
+            <h3 class="world">THE WORLD BELONGS TO THOSE WHO ENJOY IT ‍ –</h3>
+            <h4 class="count">COUNT GIACAMO LEOPARDI -</h4><br>
+            <h2 class="la">LA CARTA</h2>
+        </div>
+        <div class="second">
+            <div class="content">
+                <h5>INFO:</h5>
+                <h3>Flavors of Winter</h3>
+                <h3>20.&21.12.24 Private event</h3>
+                <h3>Free places from 27.12.2024</h3>
+                <h2>WEBSITE UNDER CONSTRUCTION -</h2>
+            </div>
+
+
+        </div>
+        <div class="third">
+            <div class="dine">
+                <h6 class="where">WHERE NEW THINGS EMERGE</h6>
+                <h1 class="fine">Fine Dining meets Industrial Chic <br>4500 Solothurn
+                    
+            </div>
+
+        </div>
+        <div class="fourth">
+            <div class="article1">
+                <img src="risto.jpg" width="700px">
+            </div>
+            <div class="artice1right">
+                <h1 class="ris">Il Ristorante</h1><br>
+                <p class="nico">Nico and Patrik invite you to experience a culinary journey with us that is defined by the immediacy of handcraft and the luxury of freshness. Discover with us the endless possibilities of sophistication and let yourself be seduced by the pure joy of exquisite cuisine. In our ambience, elegance and comfort combine to create a place that touches not only the palate but also the soul. Every dish tells a story - shaped by the hands of our master chefs, who put not only their skill but also their heart into the preparation of each dish.</p><br>
+                <h2 class="carta">LA CARTA</h2>
+            </div>
+           
+        </div>
+    <div class="arrow">
+        <div class="sticky"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
+    <div class="fifth">
+        <div class="in">
+            <br><br><h1 class="bar">Il Bar - Lounge</h1><br>
+            <p class="leave">Leave the stress of everyday life behind you and take a seat in our comfortable velvet armchairs or sofas from where you can enjoy a wonderful view of the unique backdrop of the spectacular bar. In our relaxing Mediterranean ambience you can enjoy classic or personalized drinks. See for yourself and let us pamper you.</p><br>
+            <h2 class="l"> LA CARTA</h2>
+        </div>
+        <div class="inright">
+            <img src="ars.jpg" width="700px">
+        </div>
+    </div>
+    <div class="sixth">
+        <div class="ileft">
+            <img src="arsh.jpg" width="700px">
+        </div>
+        <div class="iright">
+            <h1 class="many">Many thanks
+                Swiss Location Award 2023 & 2024 Bar & Gourmet Location</h1><br>
+            <p class="we">We would like to thank you very much for your visit and look forward to welcoming every other guest who has not yet visited us in Solothurn. Come along and spend a lovely and relaxing time with an exceptional meal or drink.</p>
+        </div>
+    </div>
+    <div class="sixth">
+        <div class="le">
+           <br><br> <br><br><h1 class="many">The story behind the FourtyFive</h1><br>
+            <p class="we">In December 2021, we took over the former Trattoria al Solito Posto. We had many visions and ideas in our heads and with a large portion of creativity we were able to realize them step by step in the renovation of <span class="bold">FortyFive</span>. The new industrial chic in Solothurn. We were actively supported by family and friends. The entire renovation was carried out with combined forces and many hours of manual work over months. That is why we are particularly proud of the result of our heart project.</p><br>
+            
+        </div>
+        <div class="r">
+            <img src="chair.jpg" width="700px">
+            <div class="d">
+                <img src="1.png" width="150px">
+                <img src="2.png" width="150px">
+                <img src="3.jpg" width="150px">
+                <img src="4.jpg" width="150px">
+            </div>
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="article1">
+            <img src="team.jpg" width="700px" height="450px">
+        </div>
+        <div class="teams">
+           <br><br><br><br> <h1 class="fo">The FortyFive Team</h1><br>
+            <p class="pa">Patrik Schmidt Chef de Cusine*<br></p>
+                (For finesse and sophistication)<br>
+             <span class="magi"> Nicola "Nico" Maggi</span><br>
+                (Host)<br><br>
+            <h5 class="carta">CONTACT</h5>
+        </div>
+       
+    </div>
+    <div class="fifth">
+        <div class="in">
+            <br><br><h1 class="bar">We look forward to<br> your visit</h1><br>
+            <p class="leave">The FortyFive bar is located in Solothurn in the Öufi Areal, at Fabrikstrasse 4, a charming industrial building. You will find us on the 3rd floor.
+                If you need to go quickly, you can also take the elevator.</p>
+        </div>
+        <div class="inright">
+            <img src="l.jpg" width="700px" height="450px">
+        </div>
+    </div>
+    <div class="last">
+        <div class="jobs">
+            <h1 class="job">Jobs</h1>
+            <p class="p">We are looking for you!<br> <span class="t">50-80% <br>service specialist/man - cook with experience<br> in fine dining.</span> <br>Are you motivated to work in a new restaurant-<br>bar and help shape it?</p><br>
+            <h2 class="m">JOBS</h2>
+        </div>
+
+    </div>
+<div class="footer">
+    
+        <div class="foot">
+            <div class="ffirst">
+                <h3>Summer - Opening Hours</h3>
+                <div class="fin">
+                    <h4>Monday: Closed</h4>
+                    <h4>Tuesday: (By reservation)</h4>
+                    <h4>Wednesday: (By reservation)</h4>
+                    <h4>Thursday: 18:00 - 23:00</h4>
+                    <h4>Friday: 18:00 - 01:00</h4>
+                    <h4>Kitchen open until 00:00</h4>
+                    <h4>Saturday: 18:00 - 01:00</h4>
+                    <h4>Kitchen open until 00:00</h4>
+                    <h4>Sunday: Closed</h4>
+                    
+                </div>
+
+            </div>
+            <div class="fsec">
+                <h3>navigation</h3>
+                <div class="fsin">
+                    <h4>Home</h4>
+                    <h4>La Carta</h4>
+                    <h4>Jobs</h4>
+                    <h4>events</h4>
+                    <h4>reservation</h4>
+                    
+                    
+                </div>
+
+            </div>
+            <div class="fth">
+                <h3>contact</h3>
+                <div class="fthin">
+                    <h4><a href="" style="color: white;">info@barfortyfive.ch</a></h4>
+                    <h4>Fabrikstrasse 4</h4>
+                    <h4>4500 Solothurn</h4>
+                    <h4>+41 32 730 45 45</h4>
+                    <h4>(also WhatsApp)</h4>
+                    
+                    
+                </div>
+                
+
+            </div>
+        
+        </div>
+        <div class="line">
+           <hr>
+           
+        </div>
+        
+        <div class="orange">
+        <div class="o1">
+           <h4> © 2022 Bar Forty-Five. All rights reserved.</h4>
+        </div>
+        <div class="o2">
+            <h4>Design by www.wavecrusher.ch</h4>
+        </div>
+        <div class="o3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+            
+        </div>
+        <div class="logo">
+            <img src="overlay.png" width="210px">
+        </div>
+       
+
+</div>
+
+    
+    
+    
+    
+
+</div>
+
+</body>
+</html>
